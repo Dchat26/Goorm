@@ -1,6 +1,6 @@
 # 거스름-돈 - 175177/1 
 
-[문제 링크](https://level.goorm.io/exam/173337/8%EC%A7%84%EC%88%98-%EA%B3%84%EC%82%B0%EA%B8%B0/quiz/1) 
+[문제 링크](https://level.goorm.io/exam/175177/%EA%B1%B0%EC%8A%A4%EB%A6%84-%EB%8F%88/quiz/1) 
 
 ### 성능 요약
 
