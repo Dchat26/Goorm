@@ -1,26 +1,28 @@
-#include <stdio.h>
+#include <iostream>
+#include <algorithm>
 
-int compare(const void* a, const void* b) {
-	return *(int*)a - *(int*)b;
-}
+using namespace std;
 
 int main() {
+	ios_base::sync_with_stdio(false);
+	cin.tie(nullptr);
+	
 	int n = 0;
-	if (scanf("%d", &n) != 1) return 0;
+	if (!(cin >> n)) return 0;
 
 	int nlist[100001];
 	for (int i = 0; i < n; i++) {
-		if (scanf("%d", &nlist[i]) != 1) return 0;
+		if (!(cin >> nlist[i])) return 0;
 	}
 
-	qsort(nlist, n, sizeof(int), compare);
+	sort(nlist, nlist + n);
 
 	int answer = 0;
 	for (int i = 0; i < n / 2; i++) {
 		answer += nlist[i] + nlist[n - 1 - i];
 	}
 
-	printf("%d\n", answer);
+	cout << answer << "\n";
 
 	return 0;
 }
