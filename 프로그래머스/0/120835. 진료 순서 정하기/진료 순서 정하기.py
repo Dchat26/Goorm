@@ -1,10 +1,6 @@
 def solution(emergency):
-    s = sorted(emergency, reverse=True)
+    dict = {}
+    for idx, i in enumerate(sorted(emergency, reverse=True)):
+        dict[i] = idx + 1
     
-    result = []
-    for i in emergency:
-        for index, j in enumerate(s):
-            if i == j:
-                result.append(index + 1)
-    
-    return result
+    return [dict[j] for j in emergency]
